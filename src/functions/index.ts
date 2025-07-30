@@ -1,3 +1,3 @@
 import { text, TextBuilder } from "./text";
-
-export { text, type TextBuilder };
+import { SwitcherOptions, Switcher, switcher } from "./switcher";
+export { text, type TextBuilder, SwitcherOptions, type Switcher, switcher };
