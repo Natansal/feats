@@ -2,8 +2,10 @@
    "name": "feats",
    "version": "2.0.3",
    "description": "A lightweight TypeScript library offering a collection of versatile helper functions and React hooks—perfect for both React and non-React projects.",
-   "main": "dist/index.cjs.js",
-   "module": "dist/index.esm.js",
+   "main": "./dist/index.cjs",
+   "module": "./dist/index.mjs",
+   "types": "./dist/index.d.ts",
+   "type": "module",
    "exports": {
       ".": {
          "import": "./dist/index.mjs",
@@ -16,7 +18,9 @@
          "types": "./dist/internals.d.ts"
       }
    },
-   "type": "module",
+   "files": [
+      "dist"
+   ],
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "build": "rollup -c",
