@@ -8,7 +8,7 @@ export default {
    input: {
       index: "src/index.ts",
       internals: "src/internals.ts",
-      react: "src/react.ts", // optional: only if you have hooks
+      react: "src/react.ts",
    },
    output: [
       {
@@ -24,7 +24,7 @@ export default {
          sourcemap: true,
       },
    ],
-   external: [], // leave empty if using peerDepsExternal
+   external: [],
    plugins: [
       peerDepsExternal(),
       resolve(),
@@ -33,6 +33,7 @@ export default {
          tsconfig: "./tsconfig.json",
          declaration: true,
          declarationDir: "dist",
+         include: ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
       }),
    ],
 };

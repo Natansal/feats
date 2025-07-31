@@ -24,7 +24,7 @@
    ],
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "rollup -c",
+      "build": "rm -rf dist && rollup -c",
       "patch": "pnpm run build && pnpm version patch && pnpm publish --access public",
       "minor": "pnpm run build && pnpm version minor && pnpm publish --access public",
       "major": "pnpm run build && pnpm version major && pnpm publish --access public"
