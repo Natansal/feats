@@ -1,6 +1,6 @@
 {
    "name": "feats",
-   "version": "2.0.4",
+   "version": "2.0.5",
    "description": "A lightweight TypeScript library offering a collection of versatile helper functions and React hooks—perfect for both React and non-React projects.",
    "main": "./dist/index.cjs",
    "module": "./dist/index.mjs",
