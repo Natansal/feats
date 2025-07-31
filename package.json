@@ -7,16 +7,8 @@
    "types": "./dist/index.d.ts",
    "type": "module",
    "exports": {
-      ".": {
-         "import": "./dist/index.mjs",
-         "require": "./dist/index.cjs",
-         "types": "./dist/index.d.ts"
-      },
-      "./internals": {
-         "import": "./dist/internals.mjs",
-         "require": "./dist/internals.cjs",
-         "types": "./dist/internals.d.ts"
-      }
+      ".": "./dist/index.js",
+      "./internals": "./dist/internals.js"
    },
    "files": [
       "dist"

@@ -1,11 +1,5 @@
 import typescript from "@rollup/plugin-typescript";
 
-// Define the formats you want to build
-const formats = [
-   { name: "cjs", ext: ".cjs" },
-   { name: "esm", ext: ".mjs" },
-];
-
 /**
  * @type {import('rollup').RollupOptions}
  */
@@ -15,13 +9,10 @@ export default {
       internals: "src/internals.ts",
    },
 
-   // Dynamically generate the output array
-   output: formats.map((format) => ({
+   output: {
       dir: "dist",
-      format: format.name,
-      entryFileNames: `[name]${format.ext}`,
       sourcemap: true,
-   })),
+   },
 
    plugins: [
       typescript({
