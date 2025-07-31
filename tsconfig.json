@@ -1,18 +1,14 @@
 {
    "compilerOptions": {
-      "target": "es2015",
-      "module": "esnext",
+      "target": "ES2018",
+      "module": "ESNext",
       "moduleResolution": "node",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "outDir": "./dist",
       "declaration": true,
-      "sourceMap": true,
-      "paths": {
-         "feats": ["./dist/index.js"],
-         "feats/internals": ["./dist/internals.js"]
-      }
+      "sourceMap": true
    },
    "include": ["src"]
 }
